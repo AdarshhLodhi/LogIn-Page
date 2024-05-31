@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root
+{
+  --prettyblue: #a2f9ff;
+  --prettylogin: #00ffc8;
+}
+
+*
+{
+  position: relative;
+  font-family: 'Overpass', sans-serif;
+}
+
+body,html
+{
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+}
+
+.uix
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  background: #a2f9ff;
+}
+
+.userlogin
+{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items:center;
+  justify-items:center;
+  width: 100%;
+  height: 100%;
+  background:var(--prettylogin);
+}
+
+.userlogin > div
+{
+  padding: 40px;
+  
+}
+
+.login-title
+{
+  font-size: 42px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+  
+}
+
+.fielde
+{
+  display: block;
+  width: 100%;
+  margin: 4px;
+}
+
+.fielde > span
+{
+  display: block;
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: #008770;
+}
+
+.fielde > input
+{
+  display: block;
+  border:0;
+  background: none;
+  border-bottom: 1px #008770 solid;
+  margin-bottom: 20px;
+  outline: none;
+  width: 100%;
+}
+
+.checkme
+{
+  display: block;
+  padding: 40px 0px;
+  color: #5ccdba;
+}
+
+.checkme > input
+{
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  -o-appearance:none;
+  outline: none;
+  content: none;
+  width: 12px;
+  height: 12px;
+  -webkit-box-shadow: 0px 0px 0px 1px #5ccdba;
+-moz-box-shadow: 0px 0px 0px 1px #5ccdba;
+box-shadow: 0px 0px 0px 1px #5ccdba;
+}
+
+.button-ok
+{
+  display: inline-block;
+  background: #00bf4f;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.button-nok
+{
+  display: inline-block;
+  font-size: 12px;
+  color: #00bf4f;
+}
+
+
+.tt
+{
+  position: absolute;
+  clip-path: polygon(50% 0%, 22% 50%, 50% 100%);
+  background: var(--prettylogin);
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+</style>
+</head>
+<body>
+<!-- VISIT MARMAN.MX -->
+<div class='uix'>
+  <div></div>
+  <div class='userlogin'>
+    <div>
+      <div class='login-title'>LOGIN</div>
+      
+      <div class='fielde'>
+        <span>Username</span>
+        <input type="text">
+      </div>
+      <div class='fielde'>
+        <span>Password</span>
+        <input type="password">
+      </div>
+      <span class='checkme'>
+        <input type='checkbox'> Agree whatever you want.
+      </span>
+      
+      <div>
+        <a href="#" class="button-ok">SIGN UP</a>
+        <a href="#" class="button-nok"> have not account ?</a>
+        
+      </div>
+    </div>
+    
+  </div>
+  <div class='tt'>asdf</div>
+</div>
+
+
+</body>
+</html>
